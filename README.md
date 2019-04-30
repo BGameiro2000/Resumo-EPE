@@ -61,15 +61,15 @@ Descarregue e instale o [<img src="https://latex.codecogs.com/gif.latex?\LaTeX" 
 
 ## Sincronizar com o servidor e fazer commits
 
-* Iniciar e sincronizar contas
+### Iniciar e sincronizar contas
 
 Inicie o GitKraken, crie conta ou associe a sua conta GitHub. Caso tenha criado uma conta nova terá que associar a conta posteriormente.
 
-* Clonar repositório
+### Clonar repositório
 
 Clique em "clone a repo", escolha "Cone with URL" e no URL insira "https://github.com/BGameiro76/Resumo-EPE.git". Escolha onde quer guardar no seu computador e clique em "Clone the repo!".
 
-* git pull e git push
+### git pull e git push
 
 Duas das ferramentas mais importantes são o git pull e o gt push. O git pull sincroniza oos seus ficheiros com os do servidor deixando-os atualizados e o git push envia as últimas alterações que realizou para o servidor onde serão verificadas e adicionadas.
 
