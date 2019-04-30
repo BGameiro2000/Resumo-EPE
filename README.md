@@ -12,6 +12,8 @@ Todos podem contribuir para este resumo através de commits neste repositório. 
 
 [Descubra como contribuir!](#como-contribuir)
 
+[Descarregue a última versão do PDF!]()
+
 ---
 
 ## Como contribuir
