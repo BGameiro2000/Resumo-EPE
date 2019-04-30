@@ -12,7 +12,7 @@ Todos podem contribuir para este resumo através de commits neste repositório. 
 
 [Descubra como contribuir!](#como-contribuir)
 
-[Descarregue a última versão do PDF!]()
+[Descarregue a última versão do PDF!](https://github.com/BGameiro76/Resumo-EPE/releases)
 
 ---
 
