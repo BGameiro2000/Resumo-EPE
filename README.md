@@ -15,3 +15,15 @@ Todos podem contribuir para este resumo através de commits neste repositório. 
 ---
 
 ## Como contribuir
+
+### Instalação
+
+1. Criar conta github
+2. Instalar git
+3. Instalar git kraken 
+4. Instalar <img src="https://latex.codecogs.com/gif.latex?\LaTeX" />
+
+### Sincronizar com o servidor e fazer commits
+
+1. Clonar repositório
+2. git pull e git push
