@@ -41,7 +41,7 @@ Todos podem contribuir para este resumo através de commits neste repositório. 
 ### Criar conta github
 
 Crie uma conta no [GitHub](https://github.com/join?source=header-home).
-Como aluno da Universidade de Lisboa tem direito a uma [GitHub Pro](https://help.github.com/en/articles/applying-for-a-student-developer-pack).
+Como aluno da Universidade de Lisboa tem direito a uma conta [GitHub Pro](https://help.github.com/en/articles/applying-for-a-student-developer-pack).
 
 ### Instalar git
 
