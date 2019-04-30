@@ -57,7 +57,7 @@ Descarregue e instale o [GitKraken](https://www.gitkraken.com/download).
 
 Note que não poderá usar o Overleaf visto que se trata de um serviço online e teria que estar constantemente a fazer upload e download dos ficheiros mais atuais.
 
-Descarregue e instale o [<img src="https://latex.codecogs.com/gif.latex?\LaTeX" />](https://miktex.org/download#all)
+Descarregue e instale o [<img src="https://latex.codecogs.com/gif.latex?\LaTeX" />](https://miktex.org/download#all).
 
 ---
 
