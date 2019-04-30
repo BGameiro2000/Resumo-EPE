@@ -16,6 +16,8 @@ Todos podem contribuir para este resumo através de commits neste repositório. 
 
 ## Como contribuir
 
+### Página do projeto
+
 ### Instalação
 
 1. Criar conta github
