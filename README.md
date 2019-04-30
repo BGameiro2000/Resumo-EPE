@@ -2,7 +2,7 @@
 Resumo teórico de Elementos de Probabilidade e Estatística feitos em LaTeX.
 
 ![Downloads](https://img.shields.io/github/downloads/BGameiro76/Resumo-EPE/total.svg?label=Downloads%20(pdf)%20)
-![Contributors](https://img.shields.io/github/contributors/BGameiro76/Resumo-EPE.svg?color=critical&label=Contribuidores)
+![Contributors](https://img.shields.io/github/contributors/BGameiro76/Resumo-EPE.svg?label=Contribuidores)
 ![Faculdade](https://img.shields.io/badge/Universidade_de_Lisboa-FCUL-blue.svg)
 ![Cadeira](https://img.shields.io/badge/Cadeira-EPE-blue.svg)
 
