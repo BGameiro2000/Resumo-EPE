@@ -36,22 +36,22 @@ Todos podem contribuir para este resumo através de commits neste repositório. 
 
 ## Instalação
 
-* Criar conta github
+### Criar conta github
 
 Crie uma conta no [GitHub](https://github.com/join?source=header-home).
 Como aluno da Universidade de Lisboa tem direito a uma [GitHub Pro](https://help.github.com/en/articles/applying-for-a-student-developer-pack).
 
-* Instalar git
+### Instalar git
 
 Descarregue e instale o [git](https://git-scm.com/downloads).
 
-* Instalar git kraken
+### Instalar git kraken
 
 Este passo não é obrigatórip sendo que pode usar o terminal para fazer o commits com git, mas caso não esteja familiarizado com git é recomendado.
 
 Descarregue e instale o [GitKraken](https://www.gitkraken.com/download).
 
-* Instalar o <img src="https://latex.codecogs.com/gif.latex?\LaTeX" />
+### Instalar o <img src="https://latex.codecogs.com/gif.latex?\LaTeX" />
 
 Note que não poderá usar o Overleaf visto que se trata de um serviço online e teria que estar constantemente a fazer upload e download dos ficheiros mais atuais.
 
