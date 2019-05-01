@@ -1,10 +1,10 @@
 # Resumo-EPE
 Resumo teórico de Elementos de Probabilidade e Estatística feitos em <img src="https://latex.codecogs.com/gif.latex?\LaTeX" />.
 
-![Downloads](https://img.shields.io/github/downloads/BGameiro76/Resumo-EPE/total.svg?label=Downloads%20(pdf)%20)
-![Contributors](https://img.shields.io/github/contributors/BGameiro76/Resumo-EPE.svg?label=Contribuidores)
-![Faculdade](https://img.shields.io/badge/Universidade_de_Lisboa-FCUL-blue.svg)
-![Cadeira](https://img.shields.io/badge/Cadeira-EPE-blue.svg)
+[<img src="https://img.shields.io/github/downloads/BGameiro76/Resumo-EPE/total.svg?label=Downloads%20(pdf)%20" />](https://github.com/BGameiro76/Resumo-EPE/releases)
+[<img src="https://img.shields.io/github/contributors/BGameiro76/Resumo-EPE.svg?label=Contribuidores" />](https://github.com/BGameiro76/Resumo-EPE/graphs/contributors)
+[<img src="https://img.shields.io/badge/Universidade_de_Lisboa-FCUL-blue.svg" />](https://ciencias.ulisboa.pt/)
+[<img src="https://img.shields.io/badge/Cadeira-EPE-blue.svg" />](https://ciencias.ulisboa.pt/pt/oferta-formativa-sinopse/201516/22743-elementos-de-probabilidades-e-estatistica)
 
 Este resumo irá conter a matéria da cadeira de EPE, disponibilizando para todos um resumo teórico completo, bem organizado e com exemplos.
 
