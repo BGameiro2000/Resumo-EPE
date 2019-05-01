@@ -1,0 +1,100 @@
+\chapter{Estudo de Alguns Modelos Probabilísticos}
+
+\section{Experiência}
+
+\subsection{Experiência aleatória (e.a.)}
+Trata-se de uma \textbf{experiência aleatória (e.a.)} se puder conduzir a dois ou mais resultados.
+
+\subsection{Experiência determinista}
+Trata-se de uma \textbf{experiência determinista} se apenas conduz a um resultado possível.
+
+\subsection{Espaço de resultados de uma experiência aleatória}
+Conjunto de todos os resultados possíveis.
+Representa-se por S ou $\Omega$.
+\begin{itemize}
+    \item Contável
+    \item Não contável
+\end{itemize}
+
+\section{Acontecimento}
+Qualquer subconjunto do espaço de resultados.
+
+\subsection{Acontecimento elementar}
+Existe apenas um caso do universo de resultados que lhe é favorável.
+
+\subsection{Acontecimento composto}
+O número de casos favoráveis é suerior a um.
+
+\section{Probabilidade}
+
+\subsection{Definição clássica de probabilidade}
+\begin{itemize}
+    \item Dados $\Omega$, espaço de resultados, e A, acontecimento: $A \subseteq \Omega$
+    \item Dado $\Omega$ finito, os resultados sejam todos equiprováveis.
+    \item $P(A) = \frac{\# A}{\# \Omega} = \frac{\text{Número de resultados favoráveis a A}}{\text{Número de resultados possíveis}}$
+\end{itemize}
+\notebox{Parece paradoxal (a definição de probabilidade depende de todos os resultados serem equiprováveis) mas deve-se à intuição, à premissa de que não está viciado.}
+
+\subsection{Definição frequentista de probabilidade}
+Considerando n repetições da experiência aleatória em questão, seja $f_n(A)$ a frequência relativa da ocorrência do acontecimento A (número de vezes que se realizou A no conjunto de n repetições da experiência aleatória).
+\begin{center}
+    $P(A) = \lim\limits_{x \to \infty} f_n(A)$
+\end{center}
+\notebox{
+    \begin{itemize}
+        \item Só permite avaliar experiências repetíveis e em condições iguais.
+        \item Tem de ser possível repetir a experiência aleatória tantas vezes quantas as que se queira.
+        \item A experiência aleatória tem de ser repetida em condições sempre iguais.
+    \end{itemize}
+}
+
+\subsection{Axiomática de Kolmogorov}
+\begin{enumerate}
+    \item $P(\Omega) = 1$
+    \item $\forall A \subseteq \Omega, P(A \geq 1)$
+    \item $A_1, A_2, ..., A_n: A_i \cap A_j = \emptyset \Rightarrow P (\bigcup\limits_{k \geq 1} A_k) = \sum\limits_{k\geq 1} P(A_k)$
+\end{enumerate}
+\begin{enumerate}[I)]
+    \item $A, B \subseteq \Omega, P(A \cup B) = P(A) + P(B) - P(A \cap B) $
+    \item $A \subseteq B \Rightarrow P(A) \leq P(B)$
+    \item $\forall A \subseteq \Omega, 0 \leq P(A) \leq 1$
+    \item $P(\overline{A}) = 1 - P(A)$
+\end{enumerate}
+
+\section{Operações}
+
+\subsection{Acontecimento diferença}
+\begin{itemize}
+    \item $A \cap \overline{B} = A \setminus B = A - B$
+    \item $P(B) = P(B \cap \Omega) = P(B \cap (A \cup \overline{A})) =\\= P((B \cap A) \cup (B \cap \overline{A})) = P(B \cap A) + P(B \cap \overline{A})$
+\end{itemize}
+\begin{center}
+    $\Downarrow$
+\end{center}
+\begin{center}
+    $P(B-A) = P(B) - P(A \cap B)$
+\end{center}
+
+\section{Probabilidade condicional}
+A probabilidade de um acontecimento A condicional à realização de um acontecimento B define-se por:
+\begin{center}
+    $P(A \mid B) = \frac{P(A \cap B)}{P(B)}, P(B) \neq 0$
+\end{center}
+O sinal $\mid$ lê-se "Se", "Sendo que" ou "Dado que".
+
+\section{Acontecimentos Independentes}
+A e B dizem-se acontecimentos independentes se:
+\begin{center}
+    $P(A \mid B) = P(A)$
+\end{center}
+A e B são independentes sse:
+\begin{center}
+    $P(A \cap B) = P(A) P(B) \longrightarrow$ Regra da multiplicação
+\end{center}
+
+\section{Acontecimentos Disjuntos}
+Também se chamam \textbf{mutuamente exclusivos} ou \textbf{incompatíveis}.
+\begin{center}
+    $A \cap B \neq 0$
+\end{center}
+\notebox{Depende dos conjuntos e não das probabilidades, mas tem repercursões em termos probabilísticos.}
