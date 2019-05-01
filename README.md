@@ -1,5 +1,5 @@
 # Resumo-EPE
-Resumo teórico de Elementos de Probabilidade e Estatística feitos em LaTeX.
+Resumo teórico de Elementos de Probabilidade e Estatística feitos em <img src="https://latex.codecogs.com/gif.latex?\LaTeX" />.
 
 ![Downloads](https://img.shields.io/github/downloads/BGameiro76/Resumo-EPE/total.svg?label=Downloads%20(pdf)%20)
 ![Contributors](https://img.shields.io/github/contributors/BGameiro76/Resumo-EPE.svg?label=Contribuidores)
