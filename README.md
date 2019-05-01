@@ -69,10 +69,10 @@ Inicie o GitKraken, crie conta ou associe a sua conta GitHub. Caso tenha criado 
 
 ### Clonar repositório
 
-Clique em "clone a repo", escolha "Cone with URL" e no URL insira "https://github.com/BGameiro76/Resumo-EPE.git". Escolha onde quer guardar no seu computador e clique em "Clone the repo!".
+Clique em "clone a repo", escolha "Clone with URL" e no URL insira "https://github.com/BGameiro76/Resumo-EPE.git". Escolha onde quer guardar no seu computador e clique em "Clone the repo!".
 
 ### git pull e git push
 
 Duas das ferramentas mais importantes são o git pull e o gt push. O git pull sincroniza oos seus ficheiros com os do servidor deixando-os atualizados e o git push envia as últimas alterações que realizou para o servidor onde serão verificadas e adicionadas.
 
-Todas as alterações que fizer na pasta onde estão os ficheiros serão detetadas pelo software e serão adicionadas mo painel da direita. Para enviar essas alterações passe o rato por cima do ficheiro e clique em "stage files". O ficherio vai para o grupo "staged files" onde pode (e deve!) adicionar os comentários sobre as alterações que realizou (em "summary" e "description"). Quando estiver a certeza que está tudo certo clique em "stage files/changes to commit" e depois em "Push".
+Todas as alterações que fizer na pasta onde estão os ficheiros serão detetadas pelo software e serão adicionadas no painel da direita. Para enviar essas alterações passe o rato por cima do ficheiro e clique em "stage files". O ficherio vai para o grupo "staged files" onde pode (e deve!) adicionar os comentários sobre as alterações que realizou (em "summary" e "description"). Quando estiver a certeza que está tudo certo clique em "stage files/changes to commit" e depois em "Push".
