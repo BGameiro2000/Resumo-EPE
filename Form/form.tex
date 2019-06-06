@@ -4,20 +4,162 @@
 
 \geometry{
     a4paper,
-    right=15mm,
-    left=15mm,
-    top=15mm,
+    right=7.5mm,
+    left=7.5mm,
+    top=10mm,
     bottom=15mm,
     }
 
 \begin{document}
 
-\input{Sections/section1.tex}
+\begin{center}
+    \begin{table}
+        \centering
+        \bgroup
+        \def\arraystretch{2}
+        \begin{tabular}{||l||l||L|L|L|L|L||} 
+        \hhline{~~||=|=|=|=|=||}
+        \multicolumn{1}{l}{}       &                  & \text{Notação}                                                      & E(X)                  & Var(X)                    & P(X=K)                                                                    & P(X < K)  \\ 
+        \hline\hline
+        \multirow{5}{*}{Discretas} & Bernoulli        & X\frown B(p)                                                        & p                     & p(1-p)                    & -                                                                         & -                      \\ 
+        \cline{2-7}
+                                   & Binomial         & X\frown Bi(n,p)                                                     & np                    & np(1-p)                   & {n \choose k} p^k(1-p)^{n-k}                                              & -                 \\ 
+        \cline{2-7}
+                                   & Geométrica       & X\frown Geom()                                                      &   -                   &\frac{1-p}{p^2}            &  -                                                                        &  -                        \\ 
+        \cline{2-7}
+                                   & Hipergeométrica  & X\frown H(N,K,n)                                                    & \frac{nK}{N}          & -                         & -                                                                         &  -                    \\ 
+        \cline{2-7}
+                                   & Poisson          & X\frown Poisson(\lambda)                                            &  \lambda              &   \lambda                 & e^{-\lambda}\frac{\lambda^k}{k!}                                          &         -          \\ 
+        \hline\hline
+        \multirow{5}{*}{Continuas} & Uniforme         & X\frown U[a,b]                                                      & \frac{a+b}{2}         &\frac{(b-a)^2}{12}         & \frac{1}{b-a}                                                             &  \frac{x-a}{b-a},  a\leq x<b                 \\ 
+        \cline{2-7}
+                                   & Exponencial      & X\frown Exp(\lambda)                                                & \frac{1}{\lambda}     & \frac{1}{\lambda ^2}      &  \lambda e^{-\lambda x}, x \geq 0                                         &  1-\lambda e^{-\lambda x}, x \geq 0                     \\ 
+        \cline{2-7}
+                                   & Gaussiana/Normal & X\frown N(\mu, \sigma) \text{ou} X\frown N(\mu, \sigma ^2)          &  \mu                  &  \sigma ^2                &  \frac{e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2}}{\sqrt{e\pi} \sigma}      &  \Phi                     \\ 
+        \cline{2-7}
+                                   & Qui-Quadrado     & \Phi \frown \chi _{k}^{2}                                           &  k                    &  2k                       &   -                                                                       &  -                     \\ 
+        \cline{2-7}
+                                   & t de Student     &  -                                                                  &  0                    &  -                        &   -                                                                       &  -                       \\
+        \hline\hline
+        \end{tabular}
+        \egroup
+        \end{table}
+\end{center}
 
-\input{Sections/section2.tex}
+\begin{itemize}
+    \item Normalização
+    \begin{itemize}
+        \item Teorema do limite central
+        \item Normal padrão
+        \item Normalização do Qui-Quadrado
+        \item Normalização do t-Student
+    \end{itemize}
+    \item Intervalos de confiança
+    \begin{itemize}
+        \item População Normal
+        \begin{itemize}
+            \item Estimar E(X)
+            \begin{itemize}
+                \item $\sigma$ conhecido
+                \item $\sigma$ desconhecido
+            \end{itemize}
+            \item Estimar $\sigma$
+            \begin{itemize}
+                \item $\mu$ conhecido
+                \item $\mu$ desconhecido
+            \end{itemize}
+        \end{itemize}
+        \item População p
+        \begin{itemize}
+            \item 1 População
+            \begin{itemize}
+                \item
+            \end{itemize}
+            \item 2 Populações
+            \begin{itemize}
+                \item $\sigma_1^2, \sigma_2^2$ conhecidos
+                \item $\sigma_1^2 = \sigma_2^2$ desconhecidos
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
 
-\input{Sections/section3.tex}
 
-\input{Sections/section4.tex}
+
+
+
+
+
+\newpage
+\begin{multicols*}{2}
+\begin{itemize}
+    \item{Axiomática de Kolmogorov}
+        \begin{enumerate}
+            \item $P(\Omega) = 1$
+            \item $\forall A \subseteq \Omega, P(A \geq 1)$
+            \item $A_1, A_2, ..., A_n: A_i \cap A_j = \emptyset \Rightarrow P (\bigcup\limits_{k \geq 1} A_k) = \sum\limits_{k\geq 1} P(A_k)$
+        \end{enumerate}
+        \begin{enumerate}[I)]
+            \item $A, B \subseteq \Omega, P(A \cup B) = P(A) + P(B) - P(A \cap B) $
+            \item $A \subseteq B \Rightarrow P(A) \leq P(B)$
+            \item $\forall A \subseteq \Omega, 0 \leq P(A) \leq 1$
+            \item $P(\overline{A}) = 1 - P(A)$
+        \end{enumerate}
+
+    \item{Probabilidade condiciomal}
+        $$P(A \mid B) = \frac{P(A \cap B)}{P(B)}, P(B) \neq 0$$
+
+    \item{Teorema de Bayes}
+        $$P(C_i \mid B) = \frac{P(B \mid C_i)P(C_i)}{\sum_{j=1}^{\infty} P(B \mid C_j)P(C_J)}$$
+
+    \item{Funções estatísticas}
+    \begin{itemize}
+        \item Valor esperado
+        \begin{itemize}
+            \item $E[x] = \sum\limits_{i} x \cdot P(X=x_i)$
+            \item $E[aX + b] = aE[x] + b$
+            \item $E[aX] = aE[x]$
+        \end{itemize}
+        \item Variância
+        \begin{itemize}
+            \item $\sigma^2 = \text{Var}[x] = E[(x-E(x))^2] = E[(X-\mu)^2] = E(x^2) - \mu^2 = E(x^2) - (E(x))^2 $
+            \item $ \text{Var}[x] \geq 0 $
+            \item $\text{Var}[aX + b] = a^2\text{Var}[x] $
+            \item $\text{Var}[X] + b = \text{Var}[x] $
+            \item $\text{Var}[b] = 0 $
+            \item $\text{Var}[X + Y] = \text{Var}[X] + \text{Var}[Y]$
+        \end{itemize}
+        \item Desvio padrão
+        \begin{itemize}
+            \item $\sigma (X) = \sqrt{\text{Var}(X)}$
+        \end{itemize}
+    \end{itemize}
+
+    \item{Variáveis independentes}
+    \begin{itemize}
+        \item X e Y dizem-se independentes sse $F_{(X,Y)}(x,y)=P(X\leq x, Y\leq y)=F_X(x)\times F_Y(y)$
+        \item Distribuição Binomial
+        \begin{itemize}
+            \item $X+Y\frown Bi(n_X+n_Y, p)$
+        \end{itemize}
+        \item Distribuição Poisson
+        \begin{itemize}
+            \item $X+Y\frown Poisson(\lambda + \mu)$
+        \end{itemize}
+        \item Distribuição Normal
+        \begin{itemize}
+            \item $X+Y\frown N(\mu_X+\mu_Y, \sqrt{\sigma_X^2+\sigma_Y^2})$
+        \end{itemize}
+    \end{itemize}
+
+    \item{Variáveis independentes}
+    \begin{itemize}
+        \item $l_{X,Y}=\frac{cov(X,Y)}{\sigma_X \sigma_Y}$
+        \item $cov(X,Y)=E(XY)-E(X)E(Y)$
+        \item $\text{X,Y independentes} \rightarrow \newline \rightarrow P(X=x_i)P(Y=y_j), \forall(x_i, y_j)$
+    \end{itemize}    
+
+\end{itemize}
+\end{multicols*}
 
 \end{document}
