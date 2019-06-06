@@ -6,7 +6,7 @@
     a4paper,
     right=7.5mm,
     left=7.5mm,
-    top=10mm,
+    top=2.5mm,
     bottom=15mm,
     }
 
@@ -46,14 +46,38 @@
         \end{table}
 \end{center}
 
+\begin{multicols*}{2}
 \begin{itemize}
     \item Normalização
     \begin{itemize}
         \item Teorema do limite central
+        \begin{itemize}
+            \item Sejam $X_1, ..., X_n$ variáveis aleatórias independentes e identicamente distribuídas, com variância finita, tais que $E(X_i)=\mu$ e $Var(X)=\sigma^2$, $\forall i=1,...,n$.
+            \item Seja $S_n = \sum_{i=1}^nX_i$.
+            \item $$P(\frac{S_n-n\mu}{\sigma\sqrt{n}}\leq y) \longrightarrow \Phi(y)$$ 
+            \item $$P(\frac{\bar{X}-\mu}{\sigma\sqrt{n}}\leq y) \longrightarrow \Phi(y)$$ 
+        \end{itemize}
         \item Normal padrão
+        \begin{itemize}
+            \item $$X\frown N(\mu, \sigma^2) \Rightarrow Z=\frac{X-\mu}{\sigma}\frown N(0,1)$$
+            \item $$Z\frown N(0, 1) \Rightarrow X=\sigma Z+\mu\frown N(\mu,\sigma^2)$$
+        \end{itemize}
         \item Normalização do Qui-Quadrado
+        \begin{itemize}
+            \item Se $(X_1, ..., X_n)$ é uma a.a. de $X\frown N(\mu, \sigma)$:
+            \item $$\frac{(n-1)S^2}{\sigma^2}\frown \chi_{n-1}^2, S^2=\frac{1}{n-1}\sum_{i=1}^n(X_i-\bar{X})^2$$
+            \item $$\bar{X}\frown N(\mu, \frac{\sigma}{\sqrt{n}}), \bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$$
+        \end{itemize}
         \item Normalização do t-Student
+        \begin{itemize}
+            \item $$T=\frac{Z}{\sqrt{\frac{Q}{K}}}=\frac{\frac{\bar{X}-\mu}{\frac{\sigma^2}{\sqrt{n}}}}{\sqrt{\frac{\frac{(n-1)S^2}{\sigma^2}}{n-1}}}$$
+            \item $$T=\frac{\bar{X}-\mu}{S}\sqrt{n}\frown t(n-1)$$
+        \end{itemize}
     \end{itemize}
+
+    \vfill\null
+    \columnbreak
+
     \item Intervalos de confiança
     \begin{itemize}
         \item População Normal
@@ -83,6 +107,7 @@
         \end{itemize}
     \end{itemize}
 \end{itemize}
+\end{multicols*}
 
 
 
@@ -152,7 +177,7 @@
         \end{itemize}
     \end{itemize}
 
-    \item{Variáveis independentes}
+    \item{Pares de variáveis discretas}
     \begin{itemize}
         \item $l_{X,Y}=\frac{cov(X,Y)}{\sigma_X \sigma_Y}$
         \item $cov(X,Y)=E(XY)-E(X)E(Y)$
