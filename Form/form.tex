@@ -4,8 +4,8 @@
 
 \geometry{
     a4paper,
-    right=7.5mm,
-    left=7.5mm,
+    right=5mm,
+    left=5mm,
     top=2.5mm,
     bottom=15mm,
     }
@@ -84,25 +84,29 @@
         \begin{itemize}
             \item Estimar E(X)
             \begin{itemize}
-                \item $\sigma$ conhecido
+                \item $\sigma$ conhecido:
+                $$IC_{(1- \alpha)100\%}(\mu)=(\bar{X}\mp \frac{\sigma}{\sqrt{n}}z_{1-\frac{\alpha}{2}})$$
                 \item $\sigma$ desconhecido
+                $$IC_{(1- \alpha)100\%}(\mu)=(\bar{X}\mp \frac{S}{\sqrt{n}}t_{1-\frac{\alpha}{2};n-1})$$
             \end{itemize}
             \item Estimar $\sigma$
             \begin{itemize}
                 \item $\mu$ conhecido
+                $$IC_{(1- \alpha)100\%}(\sigma^2)=(\frac{(n-1)S^2}{\chi_{1-\frac{\alpha}{2};n}},\frac{(n-1)S^2}{\chi_{\frac{\alpha}{2};n}})$$
                 \item $\mu$ desconhecido
+                $$IC_{(1- \alpha)100\%}(\sigma^2)=$$$$=(\frac{\sum_{i=1}^n(X_i-\mu)^2}{\chi_{1-\frac{\alpha}{2};n}},\frac{\sum_{i=1}^n(X_i-\mu)^2}{\chi_{\frac{\alpha}{2};n}})$$
             \end{itemize}
         \end{itemize}
         \item População p
         \begin{itemize}
             \item 1 População
-            \begin{itemize}
-                \item
-            \end{itemize}
+            $$IC_{(1- \alpha)100\%}(p)=(\hat{p}\mp z_{1-\frac{\alpha}{2}}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}})$$
             \item 2 Populações
             \begin{itemize}
                 \item $\sigma_1^2, \sigma_2^2$ conhecidos
+                $$\mu_1, \mu_2=(\bar{X}_1-\bar{X}_2\mp z_{1-\frac{\alpha}{2}}\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}})$$
                 \item $\sigma_1^2 = \sigma_2^2$ desconhecidos
+                $$\mu_1-\mu_2=(\bar{X}_1-\bar{X}_2\mp t_{n_1+n_2-2;1-\frac{\alpha}{2}}\sqrt{S_p^2(\frac{1}{n_1}+\frac{1}{n_2})})$$
             \end{itemize}
         \end{itemize}
     \end{itemize}
